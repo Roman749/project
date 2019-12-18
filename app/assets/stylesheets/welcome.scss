@@ -14,23 +14,16 @@ body
 	background-repeat: no-repeat;
 }
 
-#video
-{
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-}
-
 #h1
 {
 	display: flex;
 	justify-content: center;
 }
 
-#temoignages
+#milieu
 {
 	display: flex;
-	flex-direction: column;
-	justify-content: top;
-	align-items: flex-start;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 }

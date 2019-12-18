@@ -1,5 +1,28 @@
-h1
+@media all and (max-width: 480px)
+{
+	body
+	{
+		color:blue
+	}
+}
+
+body	
 {
 	font-family: 'Walter Turncoat', cursive;
-	color:green
+	color:green;
+	background-image: url("soleil.png");
+	background-repeat: no-repeat;
+}
+
+#video
+{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+#h1
+{
+	display: flex;
+	justify-content: center;
 }

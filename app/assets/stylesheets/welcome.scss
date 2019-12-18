@@ -26,3 +26,11 @@ body
 	display: flex;
 	justify-content: center;
 }
+
+#temoignages
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: top;
+	align-items: flex-start;
+}

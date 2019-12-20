@@ -1,29 +1,106 @@
-@media all and (max-width: 480px)
-{
-	body
-	{
-		color:blue
-	}
-}
-
-body	
+body
 {
 	font-family: 'Walter Turncoat', cursive;
-	color:green;
-	background-image: url("soleil.png");
-	background-repeat: no-repeat;
+	color: blue;
 }
 
 #h1
 {
 	display: flex;
 	justify-content: center;
+	font-size: 1.5em;
+}
+
+#temoignages
+{
+	font-size: 1.1em;
 }
 
 #milieu
 {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	flex-direction: column-reverse;
 	align-items: center;
 }
+
+#texte
+{
+	display: flex;
+	flex-direction: row;
+	margin-top: 25px;
+	margin-right: auto;
+	margin-left: auto;
+	justify-content: center;
+	max-width: 80%;
+	font-size: 1.4em;
+}
+
+@media all and (min-width: 700px)
+{
+	body
+	{
+		color:green;
+	}
+
+	#backgrounds
+	{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		
+	}
+
+	#soleil
+	{
+		background-image: url("soleil.png");	
+		background-repeat: no-repeat;
+		align-items: flex-start;
+		width: 236px;
+		height: 214px;
+	}
+
+	#vent
+	{
+		background-image: url("vent.jpeg");
+		background-repeat: no-repeat;
+		align-items: flex-start;
+		width: 249px;
+		height: 203px;
+	}
+
+	#vague
+	{
+		background-image: url("vague.jpeg");
+		background-repeat: no-repeat;
+		align-items: flex-end;
+		width: 181px;
+		height: 181px;
+	}
+
+	#panneau_solaire
+	{
+		background-image: url("panneau_solaire2.png");
+		background-repeat: no-repeat;
+		align-items: flex-end;
+		width: 148px;
+		height: 92px;
+	}
+
+	#milieu
+	{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	#texte
+	{
+		margin-top: 50px;
+	}
+
+	#temoignages
+	{
+		margin-top: 50px;
+	}
+}
+
+

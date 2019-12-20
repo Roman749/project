@@ -4,4 +4,6 @@ class WelcomeController < ApplicationController
   end
   def schema_enercoop
   end
+  def schema_nucleaire
+  end
 end

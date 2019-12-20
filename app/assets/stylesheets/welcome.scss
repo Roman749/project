@@ -94,7 +94,14 @@ body
 
 	#basdepage
 	{
+		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+	}
+
+	#panneau_solaire
+	{
+		display: flex;
+		margin-top: 35px;
 	}
 }

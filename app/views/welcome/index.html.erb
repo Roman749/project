@@ -1,27 +1,21 @@
-<!DOCTYPE html>
+<!DOCTYPE html>	
 <html>
 	<head>
 		<link href="https://fonts.googleapis.com/css?family=Walter+Turncoat&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<div id="backgrounds">
-			<div id="soleil"></div>
-			<div id="vent"></div>
-			<div id="vague"></div>
-			<div id="panneau_solaire"></div>
- 		</div>
 			<div id="h1">
+				<div id="soleil"></div>
 				<center><h1 class="main-title">Enercoop: Un fournisseur 100% &eacute;nergies renouvelables</h1></center>
+				<div id="vent"></div>
 			</div>
 			<div id="milieu">
 				<div id="temoignages">
 					<center>
-						<p class="element">De loin le meilleur fournisseur que j'aie jamais vu.<br />
-						<%= image_tag("edf_logo") %></p>
-						<p class="element">C'est dur de l'admettre mais Enercoop m&eacute;rite d'&ecirc;tre<br /> le fournisseur num&eacute;ro 1.<br />
-						<%= image_tag("engie_logo") %></p>
-						<p class="element">Si vous voulez aider la plan&egrave;te, commencez par eux.<br />
-						<%= image_tag("total_logo") %></p>
+						<% @testimonies.each do |testimony| %>
+							<p><%= testimony.text %></p>
+							<%= image_tag(testimony.logo) %>
+						<% end %>
 					</center>
 				</div>
 				<div id=schemas>
@@ -32,10 +26,14 @@
 					<iframe class="video" width="300" height="500" src="https://www.youtube.com/embed/xlwNxoGioWQ" frameborder="0" allow="autoplay" allowFullScreen></iframe>
 				</div>
 			</div>
-			<div id="texte">
-				<center>
-					En souscrivant chez Enercoop, vous assurerez un avenir meilleur pour vous, pour la plan&egrave;te mais aussi pour le reste du monde. En effet, Enercoop vous fournit de l'&eacute;lectricit&eacute; 100% renouvelable qu'elle ach&egrave;te directement chez les producteurs. Enercoop est une coop&eacute;rative qui est à l'&eacute;coute de ses clients et qui modifie r&eacute;guli&egrave;rement de petites choses à leur demande. Si vous d&eacute;cidez de devenir soci&eacute;taire, vous pourrez en plus participer à la vie active de l'entreprise, que vous soyez client, employ&eacute;, producteur ou m&ecirc;me aucun des trois.
-				</center>
+			<div id="basdepage">
+				<div id="vague"></div>
+				<div id="texte">
+					<center>
+						En souscrivant chez Enercoop, vous assurerez un avenir meilleur pour vous, pour la plan&egrave;te mais aussi pour le reste du monde. En effet, Enercoop vous fournit de l'&eacute;lectricit&eacute; 100% renouvelable qu'elle ach&egrave;te directement chez les producteurs. Enercoop est une coop&eacute;rative qui est à l'&eacute;coute de ses clients et qui modifie r&eacute;guli&egrave;rement de petites choses à leur demande. Si vous d&eacute;cidez de devenir soci&eacute;taire, vous pourrez en plus participer à la vie active de l'entreprise, que vous soyez client, employ&eacute;, producteur ou m&ecirc;me aucun des trois.
+					</center>
+				</div>
+				<div id="panneau_solaire"></div>
 			</div>
 	</body>
 </html>

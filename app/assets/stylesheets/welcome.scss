@@ -14,6 +14,7 @@ body
 #temoignages
 {
 	font-size: 1.1em;
+	max-width: 450px;
 }
 
 #milieu
@@ -26,10 +27,7 @@ body
 #texte
 {
 	display: flex;
-	flex-direction: row;
-	margin-top: 25px;
-	margin-right: auto;
-	margin-left: auto;
+	margin-top: 25px;	
 	justify-content: center;
 	max-width: 80%;
 	font-size: 1.4em;
@@ -40,14 +38,6 @@ body
 	body
 	{
 		color:green;
-	}
-
-	#backgrounds
-	{
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		
 	}
 
 	#soleil
@@ -94,13 +84,17 @@ body
 
 	#texte
 	{
-		margin-top: 50px;
+		margin-top: 25px;
 	}
 
 	#temoignages
 	{
 		margin-top: 50px;
 	}
+
+	#basdepage
+	{
+		flex-direction: row;
+		justify-content: space-between;
+	}
 }
-
-
